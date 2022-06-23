@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- SCRIPTS E CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" href="./assets/gear-fill.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- CSS -->
+    <link href="./Product example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./Product example for Bootstrap_files/product.css" rel="stylesheet">
+    <style type="text/css">
+      .hide {
+      display: none;
+      }
+      .recuo {
+        text-indent:2em 
+      }
+      </style> 
+    <style media="screen">
+     .loading {
+         position: fixed;
+         z-index: 99 ;
+         top: 0;
+         left: 0;
+         background: white;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .loading.hidden {
+         animation: fadeOut 8s;
+         animation-fill-mode: forwards;
+     }
+     .loading.hide {
+         display: none;
+     }
+    @keyframes fadeOut {
+
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+    }
+</style>
+<title>HELPC</title>
+</head>
+
+<body>
+    <div>
+	<!-- CABEÇALHO -->
+        <nav class="site-header sticky-top py-1">
+          <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="Menu.html">
+              <img src="./assets/box.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+            </a>
+              <a class="py-2 d-none d-md-inline-block" href="Duvidas.html">Duvidas</a>
+              <a class="py-2 d-none d-md-inline-block" href="">Sobre Nós</a>
+          </div>
+        </nav>
+      </div>
+      <br>
+	  <!-- EXPLICAÇÃO DAS PEÇAS -->
+      <div class="container form-inline">
+        <H2 class="mr-3">Memoria Ram</H2> <button onclick="changeContent1()" class="btn btn-outline-secondary">O que é ?</button>
+      <div id="show1" class="items-center hide"> 
+      <p>A memória RAM é um dispositivo imprescindível para o bom funcionamento de um computador. Responsável pelo armazenamento rápido de dados frequentemente utilizados, os problemas na memória RAM podem deixar o uso da máquina lento e impraticável.Ela também permite o acesso aos arquivos armazenados no computador. Diferentemente da memória do HD, a RAM não armazena conteúdos permanentemente. É responsável, no entanto, pela leitura dos conteúdos quando requeridos.</p>
+      </div>
+      </div>
+    </div>
+    <br>
+	  <!-- EXPLICAÇÃO DAS PEÇAS -->
+    <div class="container form-inline">
+      <H2 class="mr-3">Placa Mãe</H2> <button onclick="changeContent2()" class="btn btn-outline-secondary">O que é ?</button>
+      <div id="show2" class="items-center hide">
+      <p>Ela é o sistema que une todos os componentes de um computador, permitindo que eles funcionem de forma organizada. Sua peça dispõe de todos os caminhos e redes que permitem a troca de informação entre todas as outras: processadores, memórias, sistemas de armazenamento, placa de rede e tudo o mais, Todas essas funções tornam o nome “mãe” algo bem lógico: sem ela, o computador é apenas um amontoado de chips e placas independentes.</p>
+      </div>
+      </div>
+      <br>
+	    <!-- EXPLICAÇÃO DAS PEÇAS -->
+    <div class="container form-inline">
+      <H2 class="mr-3">Placa de Vídeo</H2> <button onclick="changeContent3()" class="btn btn-outline-secondary">O que é ?</button>
+      <div id="show3" class="items-center hide">
+      <p> Uma placa de vídeo é o componente do hardware do computador responsável por administrar e controlar as funções de exibição de vídeo na tela. Todo computador contemporâneo usa uma interface gráfica. A placa gráfica faz com que essa interface salte aos olhos através do LCD.</p>
+      </div>
+      </div>
+      <br>
+	    <!-- EXPLICAÇÃO DAS PEÇAS -->
+      <div class="container form-inline">
+        <H2 class="mr-3">Fonte</H2> <button onclick="changeContent4()" class="btn btn-outline-secondary">O que é ?</button>
+        <div id="show4" class="items-center hide"> 
+        <p>Fonte de alimentação é um componente fundamental para a máquina. É nela que irá ocorrer o processo de transformação de energia para que todo o sistema funcione sem problemas, As placas, drives e todos os sistemas do computador são feitos de delicadas peças que exigem uma quantidade adequada de energia.</p>
+        </div>
+        </div>
+        <br>
+		  <!-- EXPLICAÇÃO DAS PEÇAS -->
+        <div class="container form-inline">
+          <H2 class="mr-3">Processador</H2> <button onclick="changeContent5()" class="btn btn-outline-secondary">O que é ?</button>
+          <div id="show5" class="items-center hide">
+          <p>O processador é a unidade central de processamento de um computador (CPU), que funciona como o cérebro do computador, pois interage e faz as conexões necessárias entre todos os programas instalados, A sua função é acelerar, endereçar, resolver ou preparar dados, dependendo da aplicação.</p>
+          </div>
+          </div>
+          <br>
+		    <!-- EXPLICAÇÃO DAS PEÇAS -->
+        <div class="container form-inline">
+          <H2 class="mr-3">Incompatibilidade</H2> <button onclick="changeContent6()" class="btn btn-outline-secondary">O que é ?</button>
+          <div id="show6" class="items-center hide">
+          <p>É fundamental garantir que todas as peças sejam compatíveis e instaladas corretamente, Se a compatibilidade não for garantida, as consequências podem variar desde a perda de desempenho até a falha completa na hora de montar (caso extremo) ,É importante ressaltar que mesmo que haja compatibilidade de soquete, pode haver incompatibilidades do chipset com certas gerações de processadores, por motivos como falta de memória para manter o firmware das múltiplas famílias de chips.</p>
+          </div>
+          </div>
+          <br> 
+		    <!-- EXPLICAÇÃO DAS PEÇAS -->
+          <div class="container form-inline">
+            <H2 class="mr-3">SSD</H2> <button onclick="changeContent7()" class="btn btn-outline-secondary">O que é ?</button>
+            <div id="show7" class="items-center hide">
+            <p>Um componente de hardware que substitui o antigo HD (Hard Disk ou disco rígido) como unidade de armazenamento de dados nos PCs. Muito mais rápido, o SSD não possui discos físicos ou agulhas magnéticas, sendo capaz de acessar dados em uma fração de segundo e tornar seu computador mais ágil para abrir programas e executar tarefas.</p>
+            </div>
+            </div>
+            <br>
+			  <!-- EXPLICAÇÃO DAS PEÇAS -->
+            <div class="container form-inline">
+              <H2 class="mr-3">HDD</H2> <button onclick="changeContent8()" class="btn btn-outline-secondary">O que é ?</button>
+              <div id="show8" class="items-center hide">
+              <p>HDD é a sigla, em inglês, para Hard Disk Drive. No Brasil, esse componente é simplesmente chamado de HD ou de disco rígido. Ele tem uma função fundamental em seu computador: guardar todos os seus arquivos. Ele é a principal forma de armazenar dados em um computador. Mesmo com a existência do SSD, o atual substituto do HD, eles reinam na maioria dos PCs de mesa e notebooks.</p>
+              </div>
+              </div>
+			    <!-- SCRIPT PARA MOSTRAR E ESCONDER AS EXPLICAÇÕES -->
+          <script>
+  
+            function changeContent1() {
+            document.getElementById("show1").classList.remove("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+          }
+          
+          function changeContent2() {
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.remove("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+          }
+          function changeContent3(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.remove("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+          
+          }
+          function changeContent4(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.remove("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+            
+          }
+          function changeContent5(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.remove("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+            
+          }
+          function changeContent6(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.remove("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.add("hide");
+          }
+          function changeContent7(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.remove("hide");
+            document.getElementById("show8").classList.add("hide");
+          }
+          function changeContent8(){
+            document.getElementById("show1").classList.add("hide");
+            document.getElementById("show2").classList.add("hide");
+            document.getElementById("show3").classList.add("hide");
+            document.getElementById("show4").classList.add("hide");
+            document.getElementById("show5").classList.add("hide");
+            document.getElementById("show6").classList.add("hide");
+            document.getElementById("show7").classList.add("hide");
+            document.getElementById("show8").classList.remove("hide");
+          }
+          </script>
+</body>
+  <!-- FIM DO CABEÇALHO -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="text-muted">© The Lazy Coders</span>
+    </div>
+</footer>
+</body>
+</html>

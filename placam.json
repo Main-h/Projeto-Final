@@ -1,0 +1,38 @@
+{ "placam":[
+
+    {   "nome":"Aorus B360M Aorus Gaming 3",
+        "marca":"Gigabyte",
+        "id":1,
+        "socket":"Intel LGA 1151",
+        "tipomem":"DDR4"
+    },
+    {   "nome":"H510M-HVS R2.0",
+        "marca":"ASROCK",
+        "id":2,
+        "socket":"INTEL H510",
+        "tipomem":"DDR4"
+    },
+    {   "nome":"MICRO ATX",
+        "marca":"ASROCK",
+        "id":3,
+        "socket":"AM4",
+        "tipomem":"DDR3"
+    },
+    {   "nome":"Prime B450M Gaming",
+        "marca":"ASUS",
+        "id":4,
+        "socket":"AM4",
+        "tipomem":"DDR4"
+    },
+    {   "nome":"TUF Gaming B450M-Pro II",
+        "marca":"ASUS",
+        "id":5,
+        "socket":"AMD B450",
+        "tipomem":"DDR4"
+    }
+
+]
+
+
+
+}

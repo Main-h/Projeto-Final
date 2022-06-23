@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <!-- SCRIPTS E CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="icon" href="./assets/pc-display.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./styles/Design.css">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+<link href="./Product example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+<link href="./Product example for Bootstrap_files/product.css" rel="stylesheet">
+ <!-- CSS -->
+<style type="text/css">
+	.hide {
+  display: none;
+  }
+  .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .font {
+        src: url(Anton-Regular.ttf)
+        
+      }
+      .color{
+        color: green;
+      }
+</style>
+<title>HELPC</title>
+</head>
+
+<body>
+<div>
+ <!-- CABEÇALHO -->
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="Menu.html">
+          <img src="./assets/box.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+        </a>
+          <a class="py-2 d-none d-md-inline-block" href="Duvidas.html">Duvidas</a>
+          <a class="py-2 d-none d-md-inline-block" href="">Sobre Nós</a>
+      </div>
+    </nav>
+  </div>
+
+  <main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Sets</h1>
+        <p class="lead text-muted">Veja Pcs já montados abaixo</p>
+      </div>
+    </section>
+
+    <div class="album py-2 bg-light">
+      <div class="container">
+ <!-- SETS  -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 230px; width: 90%; display: block;" src="./assets/pc-2.jpg"data-holder-rendered="true">
+              <div class="card-body">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">-ASRock A320M DDR4 Socket AM4</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">-2x 8GB DDR4</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">-AMD Ryzen 5 PRO 4650G</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa7">-SSD Lexar 240GB SATA</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa4">-GT 730</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa5">-Pichau Gaming Nidus 500W</button>
+              <br>
+              <br>
+              <h5 class="color">PREÇO : R$ 3.089,90</h5>
+              <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="https://www.amazon.com.br/Gamer-Mancer-RYZEN-4650G-240GB/dp/B09TPM3N5M/ref=asc_df_B09TPM3N5M/?tag=googleshopp00-20&linkCode=df0&hvadid=379765287302&hvpos=&hvnetw=g&hvrand=6640579035838727762&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1651050460222&th=1" target="_blank">Comprar</a>
+                  </div>
+                  <small class="text-muted">Edição de Video</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="./assets/pc-gamer2.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">-ASUS PRIME H310</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">-8GB DDR4</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">-Intel Core I5 9400F</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa6">-HD 1000GB</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa4">-GT 730</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa5">-Fonte 500W</button>
+                <br>
+                <br>
+                <h5 class="color">PREÇO : R$ 4.499,90</h5>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <br>
+                  <a class="btn btn-outline-secondary" href="https://www.kabum.com.br/produto/108328/pc-gamer-brx-powered-by-asus-intel-core-i5-9400f-8gb-1tb-geforce-gt730-windows-10-pro-pci51tb8gbb13500w10?gclid=EAIaIQobChMI6djv7fWj-AIVY-hcCh04YAz9EAYYBCABEgI7e_D_BwE" target="_blank">Comprar</a>
+                  </div>
+                  <small class="text-muted">GAMER</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="./assets/pc-video1.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+              <div class="card-body">
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">-Asus Prime H510M-E</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">-16GB DDR4</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">-Intel Core I5 10400F</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa7">-SSD Adata 480GB</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa4">-GeForce RTX 3050</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa5">-Cougar VTC600 600W</button>
+                <br>
+                <br>
+                <h5 class="color">PREÇO : R$ 3.534,32 </h5>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="https://www.kabum.com.br/produto/315684/pc-gamer-on-gaming-powered-by-asus-i5-10400f-rtx-3050-8gb-16gb-ssd-m-2-480gb-ong104d0516m52-linux-ong104d0516m52" target="_blank">Comprar</a>
+                    
+                  </div>
+                  <small class="text-muted">GAMER</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="./assets/pc-gamer.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+              <div class="card-body">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">-Asus Prime H510M</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">-16GB DDR4</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">-Intel Core i5 10400F</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa7">-SSD 480GB</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa4">-GeForce GTX 1660GB</button>
+                  <br>
+                  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa5">-Fonte 650W</button>
+                <br>
+                <br>
+                <h5 class="color">PREÇO : R$ 6.999,00</h5>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="https://www.amazon.com.br/dp/B09TS3F984/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B09TS3F984&pd_rd_w=t9Osg&content-id=amzn1.sym.e3d70b00-b5a6-4175-bc4e-f7a1ab98bdd1&pf_rd_p=e3d70b00-b5a6-4175-bc4e-f7a1ab98bdd1&pf_rd_r=CM6CGPJR1HZ0QBVB7CFF&pd_rd_wg=QM7H7&pd_rd_r=bf221408-f21f-4ec0-9bb4-cb238c4cf7b7&s=computers&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQ1JHVjJEUVZIQjlWJmVuY3J5cHRlZElkPUEwNDgwNjYzMUcxMDNSUVkxTVBUJmVuY3J5cHRlZEFkSWQ9QTA2NTE3NzMyNEM4MUFLTkxaR1Y4JndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Comprar</a>
+                  </div>
+                  <small class="text-muted">Edição de Vídeo</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="./assets/work2.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+              <div class="card-body">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">-Asus Tuf</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">-8GB DDR4 </button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">-Intel Core i7 10700</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa6">-HDD 1000GB</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa4">-GeForce GT 730</button>
+                <br>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa5">-FONTE 260W</button>
+              <br>
+              <br>
+              <h5 class="color">PREÇO : R$ 7.049,98</h5>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="https://www.lenovo.com/br/pt/desktops-y-all-in-one/lenovo/lenovo-serie-v-sff/Lenovo-V50s/p/V50s_11EE0011BO_WEBCAM?cid=br:sem|se|google|jussi_google_desktops_pmax|pmax|desktops}&gclid=EAIaIQobChMI2fiWs_uj-AIVBMaRCh26FAoAEAQYAiABEgLCwPD_BwE" target="_blank">Comprar</a>
+           
+                  </div>
+                  <small class="text-muted">Workstation</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAIXA DE MENSAGEM PARA OS USUÁRIOS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Placa Mãe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>Ela desempenha um papel decisivo na vocação de um sistema,Na placa-mãe, todos os componentes que formam o computador são unidos e ligados entre si. Pode-se entender a placa como uma central que resolve problemas de espaço, uma vez que une todas as partes do sistema numa só, rede de fios, porque dispõe de caminhos que permitem a troca de informação entre processadores, memórias, placas e etc. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Memoria Ram</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>É um tipo de tecnologia que permite o acesso aos arquivos armazenados no computador. Diferentemente da memória do HD, a RAM não armazena conteúdos permanentemente. É responsável, no entanto, pela leitura dos conteúdos quando requeridos.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Processador</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>O processador é a unidade central de processamento de um computador (CPU), que funciona como o cérebro do computador, pois interage e faz as conexões necessárias entre todos os programas instalados.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Placa de Vídeo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>É a peça do seu computador responsável por gerar as imagens que você vê na tela, seja essa página da web, um documento no Word ou mesmo um filme ou um game.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Fonte</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>É a peça responsável em fornecer energia para todos os componentes do seu PC, pois sua principal função é converter a corrente alternada em corrente contínua.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">HD</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>Um disco rígido é um dispositivo de armazenamento necessário para manter seus arquivos e dados a longo prazo. Sempre que você salva um arquivo em seu computador, ele é salvo no disco rígido do computador. Um disco rígido é como um armário de arquivamento para seus arquivos digitais.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModa7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SSD</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p>Essa unidade é um tipo de armazenamento mais rápido e silencioso que o antigo HDD (Unidade de Disco Rígido, em português) convencionais de computadores e notebooks. O componente é essencial e garante mais velocidade em todas as tarefas, desde ligar o sistema até carregar programas e jogos.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+   <!-- FIM DO CABEÇALHO -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="text-muted">© The Lazy Coders</span>
+    </div>
+    <script src="./Modals_files/bootstrap.bundle.min.js.download" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

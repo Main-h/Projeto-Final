@@ -1,0 +1,27 @@
+{ "placa":[
+
+    {   "nome":"NV GT1030",
+        "marca":"Nvidia",
+        "id":1,
+        "memoria":2
+    },
+    {   "nome":"NVIDIA GEFORCE GT 610",
+        "marca":"Nvidia",
+        "id":2,
+        "memoria":2
+    },
+    {   "nome":"NVIDIA GeForce TUF GTX 1660 ",
+        "marca":"ASUS",
+        "id":1,
+        "memoria":4
+    },
+    {   "nome":"GTX 1660 Super OC",
+        "marca":"Gigabyte",
+        "id":4,
+        "memoria":6
+    }
+]
+
+
+
+}

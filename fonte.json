@@ -1,0 +1,27 @@
+{ "fonte":[
+
+    {   "nome":"TOMAHAWK",
+        "marca":"TGT",
+        "id":1,
+        "energia":500
+    },
+    {   "nome":"GAMER AZZA",
+        "marca":"AZZA",
+        "id":2,
+        "energia":650
+    },
+    {   "nome":"Pylon",
+        "marca":"XPG",
+        "id":1,
+        "energia":650
+    },
+    {   "nome":"EVGA",
+        "marca":"EVGA",
+        "id":4,
+        "energia":700
+    }
+]
+
+
+
+}

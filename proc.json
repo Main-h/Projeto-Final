@@ -1,0 +1,35 @@
+{  "processador":[
+
+    {   "nome":"G4560 Pentium (1151)",
+        "marca":"Intel",
+        "id":1,
+        "freq":3.5,
+        "gerac":7,
+        "preco":524.40
+    },
+    {   "nome":"Pentium Gold G6400",
+        "marca":"Intel",
+        "id":2,
+       "freq":4,
+       "preco":370.00
+    },
+    {   "nome":"Am3+ Fx-4300",
+        "marca":"AMD",
+        "id":3,
+        "freq":3.8,
+        "preco":235.50
+    },
+    {   "nome":"Ryzen 5 5600",
+        "marca":"AMD",
+        "id":4,
+        "freq":3.5,
+        "preco":1.160
+    },
+    {   "nome":"Ryzen 5 5600X",
+        "marca":"AMD",
+        "id":5,
+        "freq":3.7,
+        "preco":1.680
+
+    }
+    ]}

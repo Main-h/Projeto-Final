@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- Scripts e CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" href="./assets/gear-fill.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./styles/Design.css">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+
+<!-- CSS -->
+    <link href="./Product example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./Product example for Bootstrap_files/product.css" rel="stylesheet">
+    <style type="text/css">
+        .hide {
+      display: none;
+      }
+        .color{
+         color: green;
+        }
+        .cont{
+            width: 75%;
+        }
+        .border {
+            border: 5px solid black;
+        }
+        .my_text
+            {
+                font-family:    Arial, Helvetica, sans-serif;
+                font-size:      40px;
+                font-weight:    bold;
+            }
+     </style>
+     <style media="screen">
+        .loading {
+            position: fixed;
+            z-index: 99 ;
+            top: 0;
+            left: 0;
+            background: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+   
+        .loading.hidden {
+            animation: fadeOut 5s;
+            animation-fill-mode: forwards;
+        }
+        .loading.hide {
+            display: none;
+        }
+       @keyframes fadeOut {
+   
+           100% {
+               opacity: 0;
+               visibility: hidden;
+           }
+           
+       }
+   </style>
+<title>HELPC</title>
+</head>
+
+<body>
+    <div id="load" class="loading hidden hide">
+        <img src="./assets/loading.svg" alt="Carregando"/>
+        <h3>MONTANDO SEU COMPUTADOR</h3>
+    </div>
+    
+    <div>
+        <nav class="site-header sticky-top py-1">
+          <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="Menu.html">
+              <img src="./assets/box.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+            </a>
+              <a class="py-2 d-none d-md-inline-block" href="">Duvidas</a>
+              <a class="py-2 d-none d-md-inline-block" href="">Sobre Nós</a>
+          </div>
+        </nav>
+      </div>
+<br>
+<div><h3 align="center"><strong><u>Monte Seu Computador</u></strong></h3></div>
+<br>
+<!-- OPÇÕES DE PEÇAS -->
+<div class="container">
+<p><b>Placa Mãe</b></p>
+<select id="placam" name ="data2" class="form-select placam" aria-label="Default select example">
+  <script>
+    let data2 = {"placam":[
+    {"nome":"-------------",
+    "marca":"------",
+    "id":1,
+    "socket":"------------",
+    "tipomem":"------------",
+    "preco":0
+},
+{   "nome":"Aorus B360M Aorus Gaming 3",
+    "marca":"Gigabyte",
+    "id":2,
+    "socket":"Intel LGA 1151",
+    "tipomem":"DDR4",
+    "preco":300
+},
+{   "nome":"H510M-HVS R2.0",
+    "marca":"ASROCK",
+    "id":3,
+    "socket":"INTEL H510",
+    "tipomem":"DDR4",
+    "preco":400
+},
+{   "nome":"MICRO ATX",
+    "marca":"ASROCK",
+    "id":4,
+    "socket":"AM4",
+    "tipomem":"DDR3",
+    "preco":500
+
+},
+{   "nome":"Prime B450M Gaming",
+    "marca":"ASUS",
+    "id":5,
+    "socket":"AM4",
+    "tipomem":"DDR4",
+    "preco":600
+},
+{   "nome":"TUF Gaming B450M-Pro II",
+    "marca":"ASUS",
+    "id":6,
+    "socket":"AMD B450",
+    "tipomem":"DDR4",
+    "preco":700
+}
+    ]};
+    let createOptions1 = (arr, targetSelector) => $(targetSelector).append(arr.map(o => `<option value="${o.preco}">${o.nome} -- ${o.marca} -- ${o.tipomem} -- ${o.socket} -- R$ ${o.preco}</option>`));
+    createOptions1(data2.placam, 'select.placam');
+    </script> 
+</select>
+<br>
+<!-- SCRIPT -->
+<script src="preco.js"></script>
+<!-- OPÇÕES DE PEÇAS -->
+<p><b>Processador</b></p>
+<select id="process" name ="data1" class="form-select processador" aria-label="Default select example"></select>
+<script>
+let data1 = {  "processador":[
+{   "nome":"--------------",
+    "marca":"----------",
+    "id":1,
+    "freq":"-----------",
+    "gerac":"----------",
+    "preco":0
+},
+{   "nome":"G4560 Pentium (1151)",
+    "marca":"Intel",
+    "id":2,
+    "freq":3.5,
+    "gerac":7,
+    "preco":524
+},
+{   "nome":"Pentium Gold G6400",
+    "marca":"Intel",
+    "id":3,
+   "freq":4,
+   "preco":370
+},
+{   "nome":"Am3+ Fx-4300",
+    "marca":"AMD",
+    "id":4,
+    "freq":3.8,
+    "preco":235
+},
+{   "nome":"Ryzen 5 5600",
+    "marca":"AMD",
+    "id":5,
+    "freq":3.5,
+    "preco":1160
+},
+{   "nome":"Ryzen 5 5600X",
+    "marca":"AMD",
+    "id":6,
+    "freq":3.7,
+    "preco":1680
+
+}
+]};
+let createOptions = (arr, targetSelector) => $(targetSelector).append(arr.map(o => `<option value="${o.preco}">${o.nome} -- ${o.marca} -- R$ ${o.preco}</option>`));
+createOptions(data1.processador, 'select.processador');
+</script>
+<br>
+<!-- SCRIPTS -->
+<script src="Function.js"></script>
+<script src="sum.js"></script>
+<script src="Total.js"></script>
+<!-- OPÇÕES DE PEÇAS -->
+<p><b>Memoria Ram</b></p>
+<select id="memoriam" name="data3" class="form-select memoria" aria-label="Default select example"></select>
+<script>
+  let data3 = { "memoria":[
+  {   "nome":"--------------",
+    "marca":"----------",
+    "id":1,
+    "quantm":"-------",
+    "tipomem":"------------",
+    "preco":0
+},
+{   "nome":"TEAM GROUP T-FORCE VULCAN ",
+    "marca":"Pichau",
+    "id":2,
+    "quantm":8,
+    "tipomem":"DDR4",
+    "preco":450
+},
+{   "nome":"Geil Orion",
+    "marca":"GEIL",
+    "id":3,
+    "quantm":8,
+    "tipomem":"DDR4",
+    "preco":500
+},
+{   "nome":"VALUE SELECT",
+    "marca":"ASROCK",
+    "id":4,
+    "quantm":4,
+    "tipomem":"DDR3",
+    "preco":550
+},
+{   "nome":"Ballistix",
+    "marca":"Crucial",
+    "id":5,
+    "quantm":8,
+    "tipomem":"DDR4",
+    "preco":600
+},
+{   "nome":"Vengeance LPX",
+    "marca":"CORSAIR",
+    "id":6,
+    "quantm":8,
+    "tipomem":"DDR4",
+    "preco":700
+}
+  ]};
+  let createOptions2 = (arr, targetSelector) => $(targetSelector).append(arr.map(o => `<option value="${o.preco}">${o.nome} -- ${o.marca} -- ${o.tipomem} -- R$ ${o.preco}</option>`));
+  createOptions2(data3.memoria, 'select.memoria');
+  </script>
+  <!-- SCRIPT PARA AS COMPARAÇÕES ENTRE AS PEÇAS -->
+  <script> 
+function help2()
+ {
+ var resp = document.getElementById('placam');
+ var resp2 = document.getElementById('process');
+ var resp3 = document.getElementById('memoriam');
+ 
+ if (resp.options[resp.selectedIndex].value == 500 && resp3.options[resp3.selectedIndex].value != 550) {
+    document.getElementById("resul").innerText = "Opa! Parece que essa Placa Mãe não é compatível essa Memoria Ram.";
+    document.getElementById("button2").classList.remove("hide");
+    document.getElementById("resul2").innerText = "";
+    document.getElementById("montar").classList.add("hide");
+    document.getElementById("button").classList.add("hide");
+    document.getElementById("butto3").classList.add("hide");
+} 
+else if ((resp.options[resp.selectedIndex].value == 300 || resp.options[resp.selectedIndex].value == 400 ) && (resp2.options[resp2.selectedIndex].value == 235 || resp2.options[resp2.selectedIndex].value == 1160 || resp2.options[resp2.selectedIndex].value == 1680)) {
+    document.getElementById("resul").innerText = "Opa! Parece que essa Placa Mãe não é compatível Com esse Processador.";
+    document.getElementById("button").classList.remove("hide");
+    document.getElementById("resul2").innerText = "";
+    document.getElementById("montar").classList.add("hide");
+    document.getElementById("button2").classList.add("hide");
+    document.getElementById("button3").classList.add("hide");
+
+} 
+else if ((resp.options[resp.selectedIndex].value == 500 || resp.options[resp.selectedIndex].value == 600 || resp.options[resp.selectedIndex].value == 700 ) && (resp2.options[resp2.selectedIndex].value == 524 || resp2.options[resp2.selectedIndex].value == 370)) {
+    document.getElementById("resul").innerText = "Opa! Parece que essa Placa Mãe não é compatível Com esse Processador.";
+    document.getElementById("button").classList.remove("hide");
+    document.getElementById("resul2").innerText = "";
+    document.getElementById("montar").classList.add("hide");
+    document.getElementById("button2").classList.add("hide");
+    document.getElementById("button3").classList.add("hide");
+
+} 
+ else {
+    document.getElementById("resul2").innerText = "Tudo Certo.";
+    document.getElementById("resul").innerText = "";
+    document.getElementById("button").classList.add("hide");
+    document.getElementById("button2").classList.add("hide");
+    document.getElementById("button3").classList.add("hide");
+    document.getElementById("montar").classList.remove("hide");
+ }
+}</script>
+<br>
+<!-- OPÇÕES DE PEÇAS -->
+<p><b>Fonte</b></p>
+<select id="fonte" class="form-select fonte" aria-label="Default select example">
+  <script>
+    let data4 = { "fonte":[
+    { "nome":"----------",
+    "marca":"----",
+    "id":1,
+    "energia":0,
+    "preco":0
+},
+{   "nome":"TOMAHAWK",
+    "marca":"TGT",
+    "id":2,
+    "energia":500,
+    "preco":200
+
+},
+{   "nome":"GAMER AZZA",
+    "marca":"AZZA",
+    "id":3,
+    "energia":650,
+    "preco":250
+},
+{   "nome":"Pylon",
+    "marca":"XPG",
+    "id":4,
+    "energia":650,
+    "preco":300
+},
+{   "nome":"EVGA",
+    "marca":"EVGA",
+    "id":5,
+    "energia":700,
+    "preco":400
+}
+    ]};
+    let createOptions3 = (arr, targetSelector) => $(targetSelector).append(arr.map(o => `<option value="${o.preco}">${o.nome} -- ${o.marca} -- ${o.energia}W -- R$ ${o.preco}</option>`));
+    createOptions3(data4.fonte, 'select.fonte');
+    </script> 
+</select>
+ <!-- SCRIPT PARA AS COMPARAÇÕES ENTRE AS PEÇAS --> 
+<script>
+ 
+    function help()
+ {
+ var resp = document.getElementById('placam');
+ var resp2 = document.getElementById('process');
+ 
+ if (resp.options[resp.selectedIndex].value == 300  && resp2.options[resp2.selectedIndex].value == 235) {
+    document.getElementById("resul").innerText = "Opa! Parece que essa Placa Mãe não é compatível Com esse Processador.";
+    document.getElementById("button").classList.remove("hide");
+    document.getElementById("resul2").innerText = "";
+    document.getElementById("montar").classList.add("hide");
+    document.getElementById("button2").classList.add("hide");
+    document.getElementById("button3").classList.add("hide");
+
+} 
+ else {
+    document.getElementById("resul2").innerText = "Tudo Certo.";
+    document.getElementById("resul").innerText = "";
+    document.getElementById("button").classList.add("hide");
+    document.getElementById("button2").classList.add("hide");
+    document.getElementById("button3").classList.add("hide");
+    document.getElementById("montar").classList.remove("hide");
+ }
+}
+</script>
+<br>
+<!-- OPÇÕES DE PEÇAS -->
+<p><b>Placa de Vídeo</b></p>
+<select id="placav" class="form-select placa" aria-label="Default select example">
+  <script>
+    let data5 = { "placa":[
+    {   "nome":"-------",
+    "marca":"------",
+    "id":1,
+    "memoria":0,
+    "preco":0
+},
+{   "nome":"NV GT1030",
+    "marca":"Nvidia",
+    "id":2,
+    "memoria":2,
+    "preco":800
+},
+{   "nome":"NVIDIA GEFORCE GT 610",
+    "marca":"Nvidia",
+    "id":3,
+    "memoria":2,
+    "preco":810
+},
+{   "nome":"NVIDIA GeForce TUF GTX 1660 ",
+    "marca":"ASUS",
+    "id":4,
+    "memoria":4,
+    "preco":900
+},
+{   "nome":"GTX 1660 Super OC",
+    "marca":"Gigabyte",
+    "id":5,
+    "memoria":6,
+    "preco":1000
+}
+    ]};
+    let createOptions4 = (arr, targetSelector) => $(targetSelector).append(arr.map(o => `<option value="${o.preco}">${o.nome} -- ${o.marca} -- ${o.memoria}GB -- R$ ${o.preco}</option>`));
+    createOptions4(data5.placa, 'select.placa');
+    </script> 
+</select>
+<br>
+ <!-- SCRIPT QUE FAZ A SOMA DAS PEÇAS -->
+<script>
+    jQuery(function () {
+    $('select').change(function(){
+        var sum = 0;
+        $('select :selected').each(function() {
+            sum += Number($(this).val());
+        });
+         $("#sum").html(sum);
+    });
+});
+</script>
+ <!-- BOTÕES -->
+<div><h3 style="font-family:Verdana; color:green;"id="total2"></h3><br></div>
+<div id="total" class="my_text form-inline hide">
+<div class="my_text">R$</div><div class="my_text" id='sum'></div>
+</div>
+<div><h3 style="color:red;"id="resul"></h3><br>
+<button id="button" type="button" class="btn btn-outline-secondary hide" data-toggle="modal" data-target="#exampleModal">Saiba Mais</button>
+<button id="button2" type="button" class="btn btn-outline-secondary hide" data-toggle="modal" data-target="#exampleModa2">Saiba Mais</button>
+<button id="button3" type="button" class="btn btn-outline-secondary hide" data-toggle="modal" data-target="#exampleModa3">Saiba Mais</button>
+<br>
+<div><h3 style="font-family:Verdana; color:green;"id="resul2"></h3><br></div>
+<div class="d-block my-3">
+    <h4 id="head" class="hide">Forma de Pagamento:</h4>
+    <div id="cred" class="custom-control custom-radio hide">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">Crédito</label>
+    </div>
+    <div id="debit" class="custom-control custom-radio hide">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">Débito</label>
+    </div>
+    <div id="pix" class="custom-control custom-radio hide">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">PIX</label>
+    </div>
+  </div>
+<div class="row">
+    <div class="col">
+        <br>
+      <input id="compra" class="btn btn-lg btn-secondary fw-bold border-white bg-dark btn-outline-secondary text-success hide" type="button" value="Finalizar Compra">
+      <input id="check" class="btn btn-lg btn-secondary fw-bold border-white bg-dark btn-outline-secondary text-success" onclick="checar();" type="button" value="Checar">
+      <input id="montar" class="btn btn-lg btn-secondary fw-bold border-white bg-dark btn-outline-secondary text-success hide" onclick="func();" type="button" value="Montar">
+      <script src="back.js"></script>
+      <script src="help3.js"></script>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+ <!-- CAIXA DE MENSAGENS PARA O USUÁRIO -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">compatibilidade</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>Duas marcas são as responsáveis por grande parte das Unidades Centrais de Processamentos (CPU): Intel e AMD. Assim, você deverá se atentar em alguns detalhes, como:</p>
+         <ul><li>A compatibilidade de marca: algumas placas-mãe operam apenas com Intel ou AMD;</li><li>CPUs com soquetes diferentes: mesmo sendo compatíveis, alguns hardwares podem não apresentar o encaixe certo para o modelo;</li><li>Slot compatível: confira o DDR da memória RAM que será utilizado;</li></ul>
+         <br>
+         <p><b>Certifique-se que a Placa Mãe consiga usar a mesma marca que a do Processador.</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+          <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">compatibilidade</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>É fundamental que a memória RAM seja compatível com a placa-mãe. Isso porque os chips e até mesmo o formato delas variam. Então se a sua placa mãe é moderna, certamente ela será desenvolvida para suportar modelos de DDR4 ou até mesmo DDR5. Caso a memória seja muito antiga, não será possível conectá-la, impossibilitando o uso da máquina.</p>
+         <br>
+         <p><b>Certifique-se que a placa-mãe e a memória tenham o mesmo DDR.</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+          <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Energia</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Observar a capacidade de alimentação da fonte é essencial para que o PC não sofra com falta de energia e tenha um rendimento abaixo do esperado,se a fonte não for eficiente, ela poderá passar menos energia e esquentar demais o PC, fazendo com que haja mais esforço dos coolers, redução do desempenho do processador e da placa de vídeo, bem como uma possível queima desses componentes.</p>
+          <br>
+          <p><b>Pelas Peças selecionadas você deveria escolher uma fonte de energia maior que 500W.</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+          <a class="btn btn-outline-secondary" href="Duvidas.html" target="_blank">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- FIM DO CABEÇALHO-->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="text-muted">© The Lazy Coders</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+{ "memoria":[
+
+    {   "nome":"TEAM GROUP T-FORCE VULCAN",
+        "marca":"Pichau",
+        "id":1,
+        "quantm":8,
+        "tipomem":"DDR4"
+    },
+    {   "nome":"Geil Orion",
+        "marca":"GEIL",
+        "id":2,
+        "quantm":8,
+        "tipomem":"DDR4"
+    },
+    {   "nome":"VALUE SELECT",
+        "marca":"ASROCK",
+        "id":3,
+        "quantm":4,
+        "tipomem":"DDR3"
+    },
+    {   "nome":"Ballistix",
+        "marca":"Crucial",
+        "id":4,
+        "quantm":8,
+        "tipomem":"DDR4"
+    },
+    {   "nome":"Vengeance LPX",
+        "marca":"CORSAIR",
+        "id":5,
+        "quantm":8,
+        "tipomem":"DDR4"
+    }
+
+]
+
+
+
+}

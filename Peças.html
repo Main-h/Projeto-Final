@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <!-- SCRIPTS E CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="icon" href="./assets/search.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./styles/Design.css">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+
+ <!-- CSS -->
+    <link href="./Product example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./Product example for Bootstrap_files/product.css" rel="stylesheet">
+<style type="text/css">
+	.hide {
+  display: none;
+  }
+  table, th, td {
+  border:1px solid black;
+  }
+  .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center a
+{
+    display:block;
+    text-decoration:none;
+}
+.radioleft input {
+
+  text-align: left;
+    display:inline;
+
+}
+</style>
+</style>
+<title>HELPC</title>
+</head>
+<body>
+ <!-- CABEÇALHO -->
+  <div>
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="Menu.html">
+          <img src="./assets/box.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+        </a>
+          <a class="py-2 d-none d-md-inline-block" href="">Duvidas</a>
+          <a class="py-2 d-none d-md-inline-block" href="">Sobre Nós</a>
+      </div>
+    </nav>
+  </div>
+<br>
+ <!-- OPÇÕES PARA ESCOLHER QUAL PEÇA MOSTRAR -->
+<h3 align="center">Escolha uma Peça:</h3>
+<br>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+  <input type="radio" name="myRadios" onclick="changeContent1();" value="1" /> Placa Mãe 
+  <input type="radio" name="myRadios" onclick="changeContent2();" value="2" /> Placa de video
+  <input type="radio" name="myRadios" onclick="changeContent3();" value="3" /> Memoria RAM
+  <input type="radio" name="myRadios" onclick="changeContent4();" value="4" /> Processador
+  <input type="radio" name="myRadios" onclick="changeContent5();" value="5" />  Fonte
+</div>
+<br>
+ <!-- TABELA COM AS PEÇAS -->
+      <div id="show1" class="hide">
+        <table class="center table" style="width:50%">
+          <thead class="thead-dark">
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Local de Compra</th>
+          </tr>
+        </thead>
+          <tr>
+            <td>Aorus B360M Aorus Gaming 3</td>
+            <td>R$ 619,99</td>
+            <td><a href="https://www.kabum.com.br/produto/96610/placa-mae-gigabyte-aorus-b360m-aorus-gaming-3-intel-lga-1151-matx-ddr4?gclid=EAIaIQobChMIsc6szub49wIVokFIAB1newCDEAQYASABEgKztfD_BwE" target="_blank">Kabum&nbsp;</a></td>
+          </tr>
+          <tr>
+            <td>H510M-HVS R2.0</td>
+            <td>R$ 698,00</td>
+            <td><a href="https://www.kabum.com.br/produto/349090/placa-mae-asrock-h510m-hvs-r2-0-intel-lga-1200-matx-ddr4?gclid=EAIaIQobChMIybujsub49wIV4UFIAB0BagGWEAQYAiABEgLK6_D_BwE" target="_blank">Kabum&nbsp;</a></td>
+          </tr>
+          <tr>
+            <td>MICRO ATX</td>
+            <td>R$ 898,00</td>
+            <td><a href="https://www.amazon.com.br/GIGABYTE-B560M-AORUS-ELITE-GERA%C3%87%C3%83O/dp/B091CW69XS/ref=asc_df_B091CW69XS/?tag=googleshopp00-20&linkCode=df0&hvadid=379720664788&hvpos=&hvnetw=g&hvrand=18257638686241039810&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100845&hvtargid=pla-1248119480086&psc=1" target="_blank">Amazon&nbsp;</a></td>
+          </tr>
+          <tr>
+            <td>Prime B450M Gaming</td>
+            <td>R$ 437,90</td>
+            <td><a href="https://www.pichau.com.br/placa-mae-asus-prime-b450m-gaming-br-ddr4-socket-am4-chipset-amd-b450?gclid=EAIaIQobChMI-oPi8Ob49wIV7sqUCR2HyQFOEAQYAyABEgJuRfD_BwE" target="_blank">Pichau&nbsp;</a></td>
+          </tr>
+          <tr>
+            <td>TUF Gaming B450M-Pro II</td>
+            <td>R$ 789,90</td>
+            <td><a href="https://www.kabum.com.br/produto/128436/placa-mae-asus-tuf-gaming-b450m-pro-ii-amd-b450-matx-ddr4?gclid=EAIaIQobChMIxMmKg-f49wIVCkKRCh3BXATfEAQYASABEgKBQ_D_BwE" target="_blank">Kabum&nbsp;</a></td>
+          </tr>
+        </table>
+      </div>
+   
+    <br>  
+    <div id="show2" class="hide">
+      <table class="center table" style="width:50%">
+        <thead class="thead-dark">
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Local de Compra</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>NV GT1030</td>
+          <td>R$ 539,20</td>
+          <td><a href="https://www.amazon.com.br/GT1030-GAINWARD-PALIT-NEC103000646-1082F-426018336-4085/dp/B07DD8NHK4/ref=asc_df_B07DD8NHK4/?tag=googleshopp00-20&linkCode=df0&hvadid=379787213900&hvpos=&hvnetw=g&hvrand=5081293860953360455&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1420646700188&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>NVIDIA GEFORCE GT 610</td>
+          <td>R$ 349,99</td>
+          <td><a href="https://www.amazon.com.br/PLACA-NVIDIA-GEFORCE-64BITS-SINGLE/dp/B09G3HKCNY/ref=asc_df_B09G3HKCNY/?tag=googleshopp00-20&linkCode=df0&hvadid=379787213900&hvpos=&hvnetw=g&hvrand=15595697920471158164&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1592139464346&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>NVIDIA GeForce TUF GTX 1660</td>
+          <td>R$2.699,90</td>
+          <td><a href="https://www.kabum.com.br/produto/211056/placa-de-video-asus-nvidia-geforce-tuf-gtx-1660-super-o6g-gaming-oc-6gb-gddr6-ip5x-preto" target="_blank">Kabum&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>GTX 1660 Super OC</td>
+          <td>R$ 2.299,90</td>
+          <td><a href="https://www.terabyteshop.com.br/produto/12850/placa-de-video-gigabyte-geforce-gtx-1660-super-oc-6g-dual-6gb-gddr6-192bit-gv-n166soc-6gd?gclid=EAIaIQobChMI8dqd7ar79wIVDj6RCh2LIQGiEAQYASABEgL9dfD_BwE" target="_blank">Terabyteshop&nbsp;</a></td>
+        </tr>
+      </table>
+  </div>
+    
+    <br>
+    <div id="show3" class="hide">
+      <table class="center table" style="width:50%">
+        <thead class="thead-dark">
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Local de Compra</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>TEAM GROUP T-FORCE VULCAN</td>
+          <td>R$ 269,74</td>
+          <td><a href="https://www.pichau.com.br/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-c16-vermelha-tlprd48g3200hc16f01?gclid=EAIaIQobChMI-qbG-qv79wIVdEJIAB2S2wOqEAQYAiABEgIAiPD_BwE" target="_blank">Pichau&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Geil Orion</td>
+          <td>R$ 399,86</td>
+          <td><a href="https://www.terabyteshop.com.br/produto/14433/memoria-ddr4-geil-orion-8gb-3000mhz-vermelho-gaor48gb3000c16asc?gclid=EAIaIQobChMI-5ehqK779wIVDdORCh25ygnIEAQYASABEgKldPD_BwE" target="_blank">Terabyteshop&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>VALUE SELECT</td>
+          <td>R$ 261,94</td>
+          <td><a href="https://www.terabyteshop.com.br/produto/5998/memoria-ddr4-corsair-cmv4gx4m1a2133c15-value-select-4gb-2133mhz?gclid=EAIaIQobChMIpPbewq779wIVFemRCh2oIwW9EAQYAiABEgJgBfD_BwE" target="_blank">Terabyteshop&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Ballistix</td>
+          <td>R$ 283,90</td>
+          <td><a href="https://www.amazon.com.br/Crucial-Ballistix-mem%C3%B3ria-BL8G30C15U4R-Vermelho/dp/B084WZFMRL/ref=asc_df_B084WZFMRL/?tag=googleshopp00-20&linkCode=df0&hvadid=379708106313&hvpos=&hvnetw=g&hvrand=10778866046087131698&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1158290840618&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Vengeance LPX</td>
+          <td>R$ 849,33</td>
+          <td><a href="https://www.amazon.com.br/Mem%C3%B3ria-Corsair-3000MHz-Vengeance-CMK16GX4M2D3000C16/dp/B07B2Y1N8B/ref=asc_df_B07B2Y1N8B/?tag=googleshopp00-20&linkCode=df0&hvadid=379787220407&hvpos=&hvnetw=g&hvrand=9527368024093664860&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-521315027886&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+      </table>
+    </div>
+   
+    <br>
+    <div id="show4" class="hide">
+      <table class="center table" style="width:50%">
+        <thead class="thead-dark">
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Local de Compra</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>G4560 Pentium (1151)</td>
+          <td>R$ 498,18</td>
+          <td><a href="https://www.submarino.com.br/produto/3634436252?epar=bp_pl_px_go_pmax_pcgamer_geral_gmv&opn=XMLGOOGLE&WT.srch=1&offerId=61040ad00fff249a32f577a6&gclid=EAIaIQobChMI2Y3BpbD79wIVA-mRCh3gNgdSEAQYASABEgIlTvD_BwE" target="_blank">Submarino&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Pentium Gold G6400</td>
+          <td>R$ 367,90</td>
+          <td><a href="https://www.amazon.com.br/PROCESSADOR-2NUCLEOS-4THREADS-GRAFICOS-BX80701G6400/dp/B0883NSYG1/ref=asc_df_B0883NSYG1/?tag=googleshopp00-20&linkCode=df0&hvadid=379787216837&hvpos=&hvnetw=g&hvrand=7551120057937970588&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-950445293492&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Am3+ Fx-4300</td>
+          <td>R$ 677,89</td>
+          <td><a href="https://www.submarino.com.br/produto/5149174691?epar=bp_pl_px_go_pmax_pcgamer_geral_gmv&opn=XMLGOOGLE&WT.srch=1&offerId=628cf895d9f593c3e8da91eb&gclid=EAIaIQobChMI0vfJ1LD79wIVlOBcCh0_7AJrEAQYASABEgIO2_D_BwE" target="_blank">Submarino&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Ryzen 5 5600</td>
+          <td>R$ 1.259,00</td>
+          <td><a href="https://www.terabyteshop.com.br/produto/20788/processador-amd-ryzen-5-5600-35ghz-44ghz-turbo-6-cores-12-threads-cooler-wraith-stealth-am4-100-100000927box?gclid=EAIaIQobChMI3qTWgbH79wIVFDyRCh0W4wefEAQYASABEgLocfD_BwE" target="_blank">Terabyteshop&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Ryzen 5 5600X</td>
+          <td>R$ 2.619,31</td>
+          <td><a href="https://www.terabyteshop.com.br/produto/15692/processador-amd-ryzen-5-5600x-37ghz-46ghz-turbo-6-cores-12-threads-cooler-wraith-stealth-am4?gclid=EAIaIQobChMIzJCjnrH79wIVDj6RCh2LIQGiEAQYASABEgJww_D_BwE" target="_blank">Terabyteshop&nbsp;</a></td>
+        </tr>
+      </table>
+    </div>
+    
+    <br>
+    <div id="show5" class="hide">
+      <table class="center table" style="width:50%">
+        <thead class="thead-dark">
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Local de Compra</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>TGT-TOMAHAWK</td>
+          <td>R$ 272,62</td>
+          <td><a href="https://www.pichau.com.br/fonte-tgt-tomahawk-500w-preto-tmwk500" target="_blank">Pichau&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>Gamer AZZA</td>
+          <td>R$ 410,90</td>
+          <td><a href="https://www.amazon.com.br/Fonte-Gamer-Azza-Bronze-Psaz-650w/dp/B08ML5B41C/ref=asc_df_B08ML5B41C/?tag=googleshopp00-20&linkCode=df0&hvadid=379787216792&hvpos=&hvnetw=g&hvrand=12817188379911597929&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1436502178454&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>XPG-Pylon</td>
+          <td>R$ 465,90</td>
+          <td><a href="https://www.amazon.com.br/FONTE-ATX-650W-CV650-80-CP-9020236-BR/dp/B08QSD54YM/ref=asc_df_B08QSD54YM/?tag=googleshopp00-20&linkCode=df0&hvadid=379787216792&hvpos=&hvnetw=g&hvrand=11810235187482866873&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1231716539443&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td>EVGA</td>
+          <td>R$ 646,94</td>
+          <td><a href="https://www.amazon.com.br/FONTE-ATX-650W-CV650-80-CP-9020236-BR/dp/B08QSD54YM/ref=asc_df_B08QSD54YM/?tag=googleshopp00-20&linkCode=df0&hvadid=379787216792&hvpos=&hvnetw=g&hvrand=11810235187482866873&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001655&hvtargid=pla-1231716539443&psc=1" target="_blank">Amazon&nbsp;</a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- SCRIPT PARA MOSTRAR E ESCONDER AS LISTAS -->
+    <script>
+   
+  function changeContent1() {
+  document.getElementById("show1").classList.remove("hide");
+  document.getElementById("show2").classList.add("hide");
+  document.getElementById("show3").classList.add("hide");
+  document.getElementById("show4").classList.add("hide");
+  document.getElementById("show5").classList.add("hide");
+}
+
+function changeContent2() {
+  document.getElementById("show1").classList.add("hide");
+  document.getElementById("show2").classList.remove("hide");
+  document.getElementById("show3").classList.add("hide");
+  document.getElementById("show4").classList.add("hide");
+  document.getElementById("show5").classList.add("hide");
+}
+function changeContent3(){
+  document.getElementById("show1").classList.add("hide");
+  document.getElementById("show2").classList.add("hide");
+  document.getElementById("show3").classList.remove("hide");
+  document.getElementById("show4").classList.add("hide");
+  document.getElementById("show5").classList.add("hide");
+
+}
+function changeContent4(){
+  document.getElementById("show1").classList.add("hide");
+  document.getElementById("show2").classList.add("hide");
+  document.getElementById("show3").classList.add("hide");
+  document.getElementById("show4").classList.remove("hide");
+  document.getElementById("show5").classList.add("hide");
+  
+}
+function changeContent5(){
+  document.getElementById("show1").classList.add("hide");
+  document.getElementById("show2").classList.add("hide");
+  document.getElementById("show3").classList.add("hide");
+  document.getElementById("show4").classList.add("hide");
+  document.getElementById("show5").classList.remove("hide");
+  
+  
+}
+</script>
+<br>
+    </div>
+  <div class="row">
+    <div class="col">
+        <br>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+ <!-- FIM DO CABEÇALHO-->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="text-muted">© The Lazy Coders</span>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
